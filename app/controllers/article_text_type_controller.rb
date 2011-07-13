@@ -1,32 +1,32 @@
-class ArticleTextTypeController < ApplicationController
+class Article_Text_TypeController < ApplicationController
 def index
-    @articletexttypes = ArticleTextType.all
+    @article_text_types = Article_Text_Type.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @ArticleTextType }
+      format.xml  { render :xml => @Article_Text_Type }
     end
   end
 
 def new
-    @articletexttype = ArticleTextType.new
+    @article_text_type = Article_Text_Type.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @articletexttype }
+      format.xml  { render :xml => @article_text_type }
     end
   end
 
 def create
-    @articletexttype = ArticleTextType.new(params[:articletexttype])
+    @article_text_type = Article_Text_Type.new(params[:article_text_type])
 
     respond_to do |format|
-      if @articletexttype.save
-        format.html { redirect_to(@articletexttype, :notice => 'Articletexttype was successfully created.') }
-        format.xml  { render :xml => @articletexttype, :status => :created, :location => @articletexttype }
+      if @article_text_type.save
+        format.html { redirect_to(@article_text_type, :notice => 'Article_Text_Type was successfully created.') }
+        format.xml  { render :xml => @article_text_type, :status => :created, :location => @article_text_type }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @articletexttype.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @article_text_type.errors, :status => :unprocessable_entity }
       end
     end
   end

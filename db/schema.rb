@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110713121848) do
+ActiveRecord::Schema.define(:version => 20110713151734) do
+
+  create_table "article_section_types", :force => true do |t|
+    t.text     "Description"
+    t.integer  "ArticleText_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "article_text_types", :force => true do |t|
     t.text     "Descriptiion"

@@ -1,0 +1,25 @@
+<%= form_for(@article_section_type) do |f| %>
+  <% if @article_section_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article_section_type.errors.count, "error") %> prohibited this article_section_type from being saved:</h2>
+
+      <ul>
+      <% @article_section_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_area :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :ArticleText %><br />
+    <%= f.text_field :ArticleText %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

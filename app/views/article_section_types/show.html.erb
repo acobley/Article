@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @article_section_type.Description %>
+</p>
+
+<p>
+  <b>Articletext:</b>
+  <%= @article_section_type.ArticleText %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_section_type_path(@article_section_type) %> |
+<%= link_to 'Back', article_section_types_path %>

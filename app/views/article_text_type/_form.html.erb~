@@ -1,16 +1,4 @@
 <%= form_for(@articletexttype) do |f| %>
-  <% if @articletexttype.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@articletexttype.errors.count, "error") %> prohibited this articletexttype from being saved:</h2>
-
-      <ul>
-      <% @articletexttype.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <div class="field">
     <%= f.label :Description %><br />
     <%= f.text_field :Description %>

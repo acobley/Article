@@ -1,0 +1,2 @@
+module ArticleSectionTypesHelper
+end
