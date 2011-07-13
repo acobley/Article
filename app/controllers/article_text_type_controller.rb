@@ -1,6 +1,6 @@
 class Article_Text_TypeController < ApplicationController
 def index
-    @article_text_types = Article_Text_Type.all
+    @article_text_types = ArticleTextType.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -9,7 +9,7 @@ def index
   end
 
 def new
-    @article_text_type = Article_Text_Type.new
+    @article_text_type = ArticleTextType.new
 
     respond_to do |format|
       format.html # new.html.erb
