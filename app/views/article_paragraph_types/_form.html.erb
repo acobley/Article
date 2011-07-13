@@ -1,0 +1,21 @@
+<%= form_for(@article_paragraph_type) do |f| %>
+  <% if @article_paragraph_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article_paragraph_type.errors.count, "error") %> prohibited this article_paragraph_type from being saved:</h2>
+
+      <ul>
+      <% @article_paragraph_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Descriptio %><br />
+    <%= f.text_area :Descriptio, rows =>1 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

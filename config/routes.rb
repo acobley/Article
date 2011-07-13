@@ -1,7 +1,9 @@
 Article::Application.routes.draw do
+  resources :article_paragraph_types
+
   resources :article_section_types
 
-  resources :article_text_type
+  resources :article_text_types
 
   get "home/index"
 
