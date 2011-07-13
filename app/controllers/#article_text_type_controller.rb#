@@ -1,4 +1,4 @@
-class ArticleTextTypeController < ApplicationController
+alass ArticleTextTypeController < ApplicationController
 def index
     @articletexttypes = ArticleTextType.all
 
