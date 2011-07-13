@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110713192707) do
+ActiveRecord::Schema.define(:version => 20110713193308) do
 
   create_table "article_paragraph_types", :force => true do |t|
     t.text     "Descriptio"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20110713192707) do
     t.integer  "SequenceNumber"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "section"
   end
 
 end
