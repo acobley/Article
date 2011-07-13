@@ -1,0 +1,11 @@
+class ArticleTextTypeController < ApplicationController
+def index
+    @ArticleTextType = ArticleTextType.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @ArticleTextType }
+    end
+  end
+
+end

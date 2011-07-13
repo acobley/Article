@@ -1,0 +1,9 @@
+<% @ArticleTextType.each do |ArticletextType| %>
+  <tr>
+    <td><%= ArticletextType.Description %></td>
+    <td><%= link_to 'Show', picture %></td>
+    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+    <td><%= link_to 'Destroy', picture, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

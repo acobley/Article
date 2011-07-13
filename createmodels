@@ -1,0 +1,2 @@
+rails generate model ArticleTextType Descriptiion:text ArticleText:references
+rails generate model ArticleText Text:text SequenceNumber:integer
