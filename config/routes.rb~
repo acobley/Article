@@ -1,7 +1,9 @@
 Article::Application.routes.draw do
+  resources :article_paragraph_types
+
   resources :article_section_types
 
-  resources :article_text_type
+  resources :article_text_types
 
   get "home/index"
 
@@ -11,6 +13,8 @@ Article::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
+
+match 'article/new/:id' => 'article#new'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
